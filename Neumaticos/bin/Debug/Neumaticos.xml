@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Neumaticos</name>
+    </assembly>
+    <members>
+        <member name="F:Neumaticos.Form1.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:Neumaticos.Form1.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:Neumaticos.Form1.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:Neumaticos.Generador">
+            <summary>
+            En esta clase se van a generar todos los métodos que serán necesarios para realizar lanzas las consultas SQL, 
+            recoger los datos que estas consultas devuelven y lanzar en los formularios necesarios.
+            </summary>
+        </member>
+        <member name="M:Neumaticos.Generador.CargarInformeFabricantes">
+            <summary>
+            Método para recoger todos los fabricantes que hay
+            Método de ejemplo
+            </summary>
+        </member>
+        <member name="M:Neumaticos.Generador.CargarInformeClientes">
+            <summary>
+            Método para cargar todos los clientes de la empresa, ordenados por el nombre del cliente.
+            </summary>
+        </member>
+        <member name="M:Neumaticos.Generador.CargarFacturasClientes">
+            <summary>
+            Método para recoger todas las facturas de los clientes
+            </summary>
+        </member>
+        <member name="M:Neumaticos.Generador.CargarFacturasUnCliente(System.String)">
+            <summary>
+            Método para recoger todas las facturas de un solo cliente, en caso de que se indique un nombre
+            </summary>
+            <param name="nomBusca">El nombre del cliente que se quiere buscar</param>
+        </member>
+        <member name="M:Neumaticos.Generador.CargarFactFechas(System.DateTime,System.DateTime)">
+            <summary>
+            Método para recoger las facturas que se quieran revisar dado un rango de fecha
+            </summary>
+            <param name="fechaInicio">La fecha inicio es la fecha desde la que se quieren ver las facturas</param>
+            <param name="fechaFin">La fecha fin es la fecha hasta la que se quieren ver las facturas</param>
+        </member>
+        <member name="M:Neumaticos.Generador.CargarGrafico">
+            <summary>
+            Método para cargar un gráfico para ver el importe total de las facturas de cada año que hay en la BBDD
+            </summary>
+        </member>
+        <member name="M:Neumaticos.Program.Main">
+            <summary>
+            Punto de entrada principal para la aplicación.
+            </summary>
+        </member>
+        <member name="T:Neumaticos.UT3Informes.Clientes.ClienteWr">
+            <summary>
+            Clase con los datos necesarios para realizar un informe con todos los clientes de la empresa.
+            </summary>
+        </member>
+        <member name="T:Neumaticos.UT3Informes.FacturaCliente.FacturasClienteWr">
+            <summary>
+            Clase con los datos necesarios para el informe que muestra las facturas de los clientes
+            </summary>
+        </member>
+        <member name="T:Neumaticos.UT3Informes.FacturaFecha.FacturaFechaWr">
+            <summary>
+            Clase con los datos necesarios para mostrar el informe con aquellas facturas comprendidas entre un rango de fechas
+            </summary>
+        </member>
+        <member name="T:Neumaticos.UT3Informes.Grafico.GraficoWr">
+            <summary>
+            Clase para cargar los datos del gráfico: Año e ImporteTotal
+            </summary>
+        </member>
+        <member name="T:Neumaticos.UT3Informes.Inicio">
+            <summary>
+            Diseño de la ventana Inicio donde se encontrarán los distintos elementos que se van a mostrar.
+            </summary>
+        </member>
+        <member name="M:Neumaticos.UT3Informes.Inicio.#ctor">
+            <summary>
+            Ventana donde se van a encontrar los botones y elementos necesarios a partir de donde se lanzan los informes
+            </summary>
+        </member>
+        <member name="M:Neumaticos.UT3Informes.Inicio.btClientes_Click(System.Object,System.EventArgs)">
+            <summary>
+            Método para que al pulsar el botón 'Clientes' se abra el informe con los datos de los clientes.
+            </summary>
+        </member>
+        <member name="M:Neumaticos.UT3Informes.Inicio.btFacturasClientes_Click(System.Object,System.EventArgs)">
+            <summary>
+            Método para que se active el informe de las facturas de cada cliente, al pulsar el botón 'Facturas clientes'
+            </summary>
+        </member>
+        <member name="M:Neumaticos.UT3Informes.Inicio.btFacturasFechas_Click(System.Object,System.EventArgs)">
+            <summary>
+            Método para ver todas las facturas en un rango de fechas indicado por el cliente
+            </summary>
+        </member>
+        <member name="M:Neumaticos.UT3Informes.Inicio.btGrafico_Click(System.Object,System.EventArgs)">
+            <summary>
+            Método para ver el gráfico con el total facturado anualmente
+            </summary>
+        </member>
+        <member name="M:Neumaticos.UT3Informes.Inicio.button4_Click(System.Object,System.EventArgs)">
+            <summary>
+            Botón para el formulario del ejemplo dado en clase, deshabilitado porque sólo se usó para ver su funcionalidad
+            </summary>
+        </member>
+        <member name="F:Neumaticos.UT3Informes.Inicio.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neumaticos.UT3Informes.Inicio.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neumaticos.UT3Informes.Inicio.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Neumaticos.VisorInforme.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Neumaticos.VisorInforme.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Neumaticos.VisorInforme.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Neumaticos.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:Neumaticos.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:Neumaticos.Properties.Resources.Culture">
+            <summary>
+              Invalida la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos usando esta clase de recursos fuertemente tipados.
+            </summary>
+        </member>
+        <member name="T:SqlServerTypes.Utilities">
+            <summary>
+            Utility methods related to CLR Types for SQL Server 
+            </summary>
+        </member>
+        <member name="M:SqlServerTypes.Utilities.LoadNativeAssemblies(System.String)">
+            <summary>
+            Loads the required native assemblies for the current architecture (x86 or x64)
+            </summary>
+            <param name="rootApplicationPath">
+            Root path of the current application. Use Server.MapPath(".") for ASP.NET applications
+            and AppDomain.CurrentDomain.BaseDirectory for desktop applications.
+            </param>
+        </member>
+    </members>
+</doc>
